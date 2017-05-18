@@ -114,7 +114,7 @@ export default class Swiper extends PureComponent {
     let { onScrollEnd } = this.props;
 
     if ('function' === typeof onScrollEnd) {
-      onScrollEnd(page);
+      onScrollEnd(Math.round(this.progress));
     }
   }
 
